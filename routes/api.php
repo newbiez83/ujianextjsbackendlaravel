@@ -25,4 +25,5 @@ use App\Http\Controllers\Api\PegawaiController;
 
 Route::get('/listpegawai', [PegawaiController::class, 'index']);
 Route::post('/tambahdatapegawai', [PegawaiController::class, 'store']);
+Route::put('/editpegawai/{id}', [PegawaiController::class, 'update']);
 Route::delete('/hapuspegawai/{id}', [PegawaiController::class, 'destroy']);
